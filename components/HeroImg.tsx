@@ -8,7 +8,7 @@ interface HeroImgProps {
 const HeroImg = ({ containerStyles, imgSrc }: HeroImgProps) => {
 	return (
 		<div className={`${containerStyles}`}>
-			<Image src={imgSrc} alt='' fill priority />
+			<Image src={imgSrc} alt='' fill priority className='object-contain' />
 		</div>
 	);
 };

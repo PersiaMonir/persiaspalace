@@ -6,8 +6,8 @@ import ProjectCard from '@/components/ProjectCard';
 const projectData = [
 	{
 		image: '/work/3.png',
-		category: 'Portraits',
-		name: 'February 11, 2024',
+		category: 'Models',
+		name: 'Angelica Raven',
 		description:
 			'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum, modi.',
 		link: '/',
@@ -16,16 +16,7 @@ const projectData = [
 	{
 		image: '/work/5.png',
 		category: 'Models',
-		name: 'April 22, 2023',
-		description:
-			'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum, modi.',
-		link: '/',
-		codepen: '/',
-	},
-	{
-		image: '/work/6.png',
-		category: 'Places',
-		name: 'Nov 07, 2023',
+		name: 'Kimora Klein',
 		description:
 			'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum, modi.',
 		link: '/',
@@ -33,8 +24,8 @@ const projectData = [
 	},
 	{
 		image: '/work/7.png',
-		category: 'Corporate',
-		name: 'Jan 14, 2021',
+		category: 'Models',
+		name: 'Jessie Palmer',
 		description:
 			'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum, modi.',
 		link: '/',
@@ -42,8 +33,8 @@ const projectData = [
 	},
 	{
 		image: '/work/8.png',
-		category: 'fashion',
-		name: 'Jan 31, 2021',
+		category: 'Models',
+		name: 'Kayla',
 		description:
 			'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum, modi.',
 		link: '/',
@@ -51,17 +42,8 @@ const projectData = [
 	},
 	{
 		image: '/work/9.png',
-		category: 'fashion',
-		name: 'Aug 31, 2021',
-		description:
-			'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum, modi.',
-		link: '/',
-		codepen: '/',
-	},
-	{
-		image: '/work/10.png',
-		category: 'Corporate',
-		name: 'Mar 11, 2013',
+		category: 'Models',
+		name: 'Rachel Steele',
 		description:
 			'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum, modi.',
 		link: '/',
@@ -70,7 +52,7 @@ const projectData = [
 	{
 		image: '/work/3.png',
 		category: 'Models',
-		name: 'Oct 23, 2019',
+		name: 'Mary Johnson',
 		description:
 			'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum, modi.',
 		link: '/',
@@ -89,7 +71,7 @@ const Gallery = () => {
 					damping={1e-1}
 					triggerOnce={true}>
 					<h2 className='mx-auto mb-8 text-center section-title xl:mb-16'>
-						My Gallery
+						My Friends
 					</h2>
 				</Fade>
 				<div className='grid grid-cols-1 gap-4 text-lg xl:mt-8 lg:grid-cols-3'>

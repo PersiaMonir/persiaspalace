@@ -3,8 +3,10 @@ import Link from 'next/link';
 
 const Logo = () => {
 	return (
-		<Link href='/'>
-			<Image src='/logo.svg' alt='' width={55} height={55} priority />
+		<Link
+			href='/'
+			className='text-2xl tracking-widest uppercase hover:text-primary md:text-3xl xl:text-4xl'>
+			Persia Monir
 		</Link>
 	);
 };

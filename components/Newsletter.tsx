@@ -22,7 +22,7 @@ const Newsletter = () => {
 								damping={1e-1}
 								triggerOnce={true}>
 								<h2 className='text-3xl font-bold tracking-tight section-title sm:text-4xl'>
-									Need a Photographer?
+									Need a Model?
 								</h2>
 							</Fade>
 
@@ -78,7 +78,7 @@ const Newsletter = () => {
 									</div>
 
 									<dt className='mt-4 font-semibold text-muted-foreground'>
-										Weekly articles
+										Weekly posts
 									</dt>
 									<dd className='mt-2 leading-7'>
 										Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -99,7 +99,7 @@ const Newsletter = () => {
 									</div>
 
 									<dt className='mt-4 font-semibold text-muted-foreground'>
-										Full Security
+										Full Privacy
 									</dt>
 									<dd className='mt-2 leading-7'>
 										Lorem ipsum dolor sit, amet consectetur adipisicing elit.

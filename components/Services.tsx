@@ -13,19 +13,19 @@ import { Fade } from 'react-awesome-reveal';
 const servicesData = [
 	{
 		icon: <Smile size={48} strokeWidth={1} />,
-		title: 'Portraiture',
+		title: 'Book 1',
 		description:
 			'But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system.',
 	},
 	{
 		icon: <Scan size={48} strokeWidth={1} />,
-		title: 'Landscapes',
+		title: 'Book 2',
 		description:
 			'But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system.',
 	},
 	{
 		icon: <Bird size={48} strokeWidth={1} />,
-		title: 'Lifestyle',
+		title: 'Book 3',
 		description:
 			'But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system.',
 	},
@@ -42,7 +42,7 @@ const Services = () => {
 					damping={1e-1}
 					triggerOnce={true}>
 					<h2 className='mx-auto mb-6 text-center section-title xl:mb-24'>
-						Our Services
+						My Books
 					</h2>
 				</Fade>
 

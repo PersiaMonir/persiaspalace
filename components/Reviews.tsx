@@ -20,35 +20,35 @@ const reviewsData = [
 	{
 		avatar: '/reviews/avatar-1.png',
 		name: 'Jennifer',
-		job: 'Chief',
+		job: '2-Month Subscriber',
 		review:
 			'But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account.',
 	},
 	{
 		avatar: '/reviews/avatar-2.png',
 		name: 'Lopez Chris',
-		job: 'CEO',
+		job: '3-Month Subscriber',
 		review:
 			'You how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account, and expound',
 	},
 	{
 		avatar: '/reviews/avatar-3.png',
 		name: 'Hamilton',
-		job: 'COO',
+		job: '6-Month Subscriber',
 		review:
 			'But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account.',
 	},
 	{
 		avatar: '/reviews/avatar-4.png',
 		name: 'Lucifer',
-		job: 'APP Developer',
+		job: '1-Month Subscriber',
 		review:
 			'You how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account, and expound',
 	},
 	{
 		avatar: '/reviews/avatar-6.png',
 		name: 'Stork Gem',
-		job: 'Chief',
+		job: '4-Month Subscriber',
 		review:
 			'You how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account, and expound',
 	},
@@ -65,7 +65,7 @@ const Reviews = () => {
 					damping={1e-1}
 					triggerOnce={true}>
 					<h2 className='mx-auto mb-12 text-center section-title'>
-						They say about our work
+						Hear from my fans
 					</h2>
 				</Fade>
 

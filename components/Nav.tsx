@@ -11,12 +11,17 @@ interface NavProps {
 const links = [
 	{ path: '/', name: 'home' },
 	{ path: '/about', name: 'about' },
-	{ path: '/portfolio', name: 'portfolio' },
+	{ path: '/books', name: 'books' },
 	{ path: '/pricing', name: 'pricing' },
 	{ path: '/contact', name: 'contact' },
 ];
 
-const Nav = ({ containerStyles, linkStyles, underlineStyles }: NavProps) => {
+const Nav = ({
+	containerStyles,
+	linkStyles,
+	underlineStyles,
+	...props
+}: NavProps) => {
 	const path = usePathname();
 
 	return (
@@ -25,7 +30,8 @@ const Nav = ({ containerStyles, linkStyles, underlineStyles }: NavProps) => {
 				<Link
 					key={index}
 					href={link.path}
-					className={`capitalize ${linkStyles}`}>
+					className={`capitalize ${linkStyles}`}
+					{...props}>
 					{link.path === path && (
 						<motion.span
 							initial={{ y: '-100%' }}

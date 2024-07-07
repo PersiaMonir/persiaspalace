@@ -8,83 +8,81 @@ import ProjectCard from '@/components/ProjectCard';
 const projectData = [
 	{
 		image: '/work/3.png',
-		category: 'portraits',
-		name: 'Portrait: Macro Allian',
-		description: 'Shoot Date: 08/01/2024',
+		category: 'fiction',
+		name: 'Fiction: Book 1',
+		description: 'Price: $20.00',
 		link: '/',
 		codepen: '/',
 	},
 	{
 		image: '/work/9.png',
-		category: 'portraits',
-		name: 'Portrait: Mark Adam',
-		description: 'Shoot Date: 11/01/2017',
+		category: 'fiction',
+		name: 'Fiction: Book 2',
+		description: 'Price: $25.00',
 		link: '/',
 		codepen: '/',
 	},
 	{
 		image: '/work/2.png',
-		category: 'Products',
-		name: 'Product: Cosmetics',
-		description: 'Shoot Date: 14/01/2018',
+		category: 'Non-Fiction',
+		name: 'Non-Fiction: Book 3',
+		description: 'Price: $30.00',
 		link: '/',
 		codepen: '/',
 	},
 	{
 		image: '/work/1.png',
-		category: 'portraits',
-		name: 'Portrait: Lucy Aln',
-		description: 'Shoot Date: 16/07/2023',
+		category: 'fiction',
+		name: 'Fiction: Book 4',
+		description: 'Price: $15.00',
 		link: '/',
 		codepen: '/',
 	},
 	{
 		image: '/work/8.png',
-		category: 'fashion',
-		name: 'Fashion: Susee',
-		description: 'Shoot Date: 28/07/2024',
+		category: 'Biographies',
+		name: 'Biography: Book 5',
+		description: 'Price: $35.00',
 		link: '/',
 		codepen: '/',
 	},
 	{
 		image: '/work/4.png',
-		category: 'Products',
-		name: 'Canteen Website',
-		description: 'Shoot Date: 09/03/2024',
+		category: 'Non-Fiction',
+		name: 'Non-Fiction: Book 6',
+		description: 'Price: $40.00',
 		link: '/',
 		codepen: '/',
 	},
 	{
 		image: '/work/5.png',
-		category: 'portraits',
-		name: 'Portrait: Elsa Liv',
-		description: 'Shoot Date: 09/03/2024',
+		category: 'fiction',
+		name: 'Fiction: Book 7',
+		description: 'Price: $45.00',
 		link: '/',
 		codepen: '/',
 	},
 	{
 		image: '/work/11.png',
-		category: 'fashion',
-		name: 'Fashion: Adam',
-		description: 'Shoot Date: 13/02/2021',
+		category: 'Biographies',
+		name: 'Biography: Book 8',
+		description: 'Price: $50.00',
 		link: '/',
 		codepen: '/',
 	},
 ];
 
 const uniqueCategories = [
-	'all projects',
+	'all books',
 	...Array.from(new Set(projectData.map(item => item.category))),
 ];
 
 const Portfolio = () => {
 	const [categories, setCategories] = useState<string[]>(uniqueCategories);
-	const [category, setCategory] = useState<string>('all projects');
+	const [category, setCategory] = useState<string>('all books');
 
 	const filteredProjects = projectData.filter(project => {
-		return category === 'all projects'
-			? project
-			: project.category === category;
+		return category === 'all books' ? project : project.category === category;
 	});
 
 	return (
@@ -97,7 +95,7 @@ const Portfolio = () => {
 					damping={1e-1}
 					triggerOnce={true}>
 					<h2 className='mx-auto mb-8 text-center section-title xl:mb-16'>
-						My Portfolio
+						My Books
 					</h2>
 				</Fade>
 
@@ -124,18 +122,11 @@ const Portfolio = () => {
 
 					{/* Tabs Content */}
 					<div className='grid grid-cols-1 text-lg xl:mt-8 lg:grid-cols-3'>
-						<Fade
-							direction='up'
-							delay={800}
-							cascade
-							damping={1e-1}
-							triggerOnce={true}>
-							{filteredProjects.map((project, index) => (
-								<TabsContent key={index} value={category}>
-									<ProjectCard project={project} />
-								</TabsContent>
-							))}
-						</Fade>
+						{filteredProjects.map((project, index) => (
+							<TabsContent key={index} value={category}>
+								<ProjectCard project={project} />
+							</TabsContent>
+						))}
 					</div>
 				</Tabs>
 			</div>

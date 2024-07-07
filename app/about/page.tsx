@@ -5,17 +5,15 @@ import { Fade } from 'react-awesome-reveal';
 import HeroImg from '@/components/HeroImg';
 
 const infoData = [
-	{ icon: <RiUserHeartFill size={20} />, text: 'Mrs Smith' },
-	{ icon: <RiSendPlaneFill size={20} />, text: '+91 99 787 7761' },
-	{ icon: <RiUserHeartFill size={20} />, text: 'photography@gmail.com' },
-	{ icon: <RiUserHeartFill size={20} />, text: 'Born on 23 Jan, 2000' },
-	{ icon: <RiUserHeartFill size={20} />, text: 'Master Degree' },
-	{ icon: <RiUserHeartFill size={20} />, text: '22, Ella Statu, Texas, US' },
+	{ icon: <RiUserHeartFill size={20} />, text: 'Persia Monir' },
+	{ icon: <RiSendPlaneFill size={20} />, text: 'Oklahoma City, Oklahoma' },
+	{ icon: <RiUserHeartFill size={20} />, text: 'persiamonir@gmail.com' },
+	{ icon: <RiUserHeartFill size={20} />, text: 'Born on 27 Sep, 1958' },
 ];
 
 const About = () => {
 	return (
-		<section className='min-h-screen pb-12 xl:py-24'>
+		<section className='min-h-screen pb-12 pt-8 md:pt-0 xl:py-24'>
 			<div className='container mx-auto'>
 				<Fade
 					direction='up'
@@ -39,7 +37,7 @@ const About = () => {
 							triggerOnce={true}>
 							<HeroImg
 								containerStyles='w-[400px] h-[400px] lg:w-[505px] lg:h-[505px] bg-no-repeat relative'
-								imgSrc='/about/profile.png'
+								imgSrc='/profile.jpg'
 							/>
 						</Fade>
 					</div>
@@ -55,7 +53,7 @@ const About = () => {
 									damping={1e-1}
 									triggerOnce={true}>
 									<h3 className='mb-4 h3'>
-										Let&apos;s plan your perfect photoshoot
+										Let&apos;s tell you a little about me
 									</h3>
 								</Fade>
 
@@ -66,9 +64,10 @@ const About = () => {
 									damping={1e-1}
 									triggerOnce={true}>
 									<p className='max-w-xl mx-auto subtitle xl:mx-0'>
-										Our mission is to further develop the overall excellence of
-										photography and to capture memories that will be cherised
-										for a lifetime, in the timeless photographs.
+										I am your favorite mature, busty film star with the great
+										big hairy bush! As you know, I love the adult industry and
+										love what I do i.e. filming and meeting my fans in different
+										cities.
 									</p>
 								</Fade>
 
@@ -79,9 +78,10 @@ const About = () => {
 									damping={1e-1}
 									triggerOnce={true}>
 									<p className='max-w-xl mx-auto subtitle xl:mx-0'>
-										Professional photography services combine the classic
-										knowledge of traditional photographic portraiture and
-										contemporary style.
+										My hobbies are golf, writing, dancing, cooking, gardening
+										and any outdoor activities. I haven’t tried the Pickle Ball
+										sport as I know I will get addicted and I just don’t have
+										time.
 									</p>
 								</Fade>
 

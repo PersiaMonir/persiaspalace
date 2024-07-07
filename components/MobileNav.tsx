@@ -1,7 +1,12 @@
 import Logo from '@/components/Logo';
 import Nav from '@/components/Nav';
 import Socials from '@/components/Socials';
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import {
+	Sheet,
+	SheetClose,
+	SheetContent,
+	SheetTrigger,
+} from '@/components/ui/sheet';
 import { AlignJustify } from 'lucide-react';
 
 const MobileNav = () => {
@@ -14,10 +19,12 @@ const MobileNav = () => {
 				<div className='flex flex-col items-center justify-between h-full py-8'>
 					<div className='flex flex-col items-center gap-y-32'>
 						<Logo />
-						<Nav
-							containerStyles='flex flex-col items-center gap-y-6'
-							linkStyles='text-xl'
-						/>
+						<SheetClose asChild>
+							<Nav
+								containerStyles='flex flex-col items-center gap-y-6'
+								linkStyles='text-xl'
+							/>
+						</SheetClose>
 					</div>
 
 					{/* Social Icons */}

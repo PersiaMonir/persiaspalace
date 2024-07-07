@@ -6,32 +6,37 @@ import {
 	FingerPrintIcon,
 	LockClosedIcon,
 } from '@heroicons/react/24/outline';
+import { GiWorld } from 'react-icons/gi';
 import { Fade } from 'react-awesome-reveal';
 
 const features = [
 	{
-		name: 'PHOTOGRAPHY',
+		name: 'BOSTON, MA',
+		dates: '07/15/2022 - 07/17/2022',
 		description:
-			'Studio comes with elements made specifically for photographers, including the client list, password protected pages, and the proofing gallery',
-		icon: CloudArrowUpIcon,
+			'A fun, 2-day event where you can meet me and my friends, take photos, and maybe something more. You never know what might happen!',
+		icon: GiWorld,
 	},
 	{
-		name: 'PORTFOLIO LISTS',
+		name: 'WASHINGTON, DC',
+		dates: '08/05/2022 - 08/07/2022',
 		description:
-			'Use our portfolio lists to create amazing galleries of your work. It&apos;s easy, intuitive, and most important of all, your work is sure to command attention.',
-		icon: LockClosedIcon,
+			'A fun, 2-day event where you can meet me and my friends, take photos, and maybe something more. You never know what might happen!',
+		icon: GiWorld,
 	},
 	{
-		name: 'FULLY CUSTOMIZABLE',
+		name: 'CHICAGO, IL',
+		dates: '09/02/2022 - 09/04/2022',
 		description:
-			'It is a fully flexible theme. All elements, pages and every other aspect of your website can be effortlessly adapted to fit your specific needs',
-		icon: ArrowPathIcon,
+			'A fun, 2-day event where you can meet me and my friends, take photos, and maybe something more. You never know what might happen!',
+		icon: GiWorld,
 	},
 	{
-		name: 'FREE PLUGINS',
+		name: 'LONDON, UK',
+		dates: '10/21/2022 - 10/23/2022',
 		description:
-			'Two amazing plugins are included for free with Azalea: the Revolution Slider plugin & the intuitive drag-and-drop Visual Composer page builder',
-		icon: FingerPrintIcon,
+			'A fun, 2-day event where you can meet me and my friends, take photos, and maybe something more. You never know what might happen!',
+		icon: GiWorld,
 	},
 ];
 
@@ -46,7 +51,7 @@ const Features = () => {
 					damping={1e-1}
 					triggerOnce={true}>
 					<h2 className='mx-auto mb-2 text-center section-title xl:mb-3'>
-						Key Features
+						Tour Dates
 					</h2>
 				</Fade>
 				<div className='flex flex-col'>
@@ -58,7 +63,7 @@ const Features = () => {
 							damping={1e-1}
 							triggerOnce={true}>
 							<p className='mt-2 text-3xl font-bold tracking-tight text-black dark:text-white sm:text-4xl'>
-								Everything you need to deliver faster.
+								Everything you need to see me in person.
 							</p>
 						</Fade>
 						<Fade
@@ -68,9 +73,10 @@ const Features = () => {
 							damping={1e-1}
 							triggerOnce={true}>
 							<p className='mt-6 text-lg leading-8 text-black dark:text-white'>
-								Its wide array of extremely useful & user-friendly elements and
-								features turn website creation into a cakewalk. Get started now
-								& see just how easy it is to make the website you always wanted.
+								Check out my tour dates to see when I&apos;ll be visiting your
+								city and join me and my friends for an unforgettable experience.
+								Only for a limited time! Don&apos;t miss out — reserve your spot
+								today!
 							</p>
 						</Fade>
 					</div>
@@ -101,6 +107,8 @@ const Features = () => {
 										</div>
 									</dt>
 									<dd className='mt-2 text-base leading-7'>
+										<i>{feature.dates}</i>
+										<br />
 										{feature.description}
 									</dd>
 								</div>

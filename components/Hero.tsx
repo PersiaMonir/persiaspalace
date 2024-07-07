@@ -6,7 +6,7 @@ import {
 	RiMenFill,
 	RiBookmark3Fill,
 	RiBodyScanFill,
-	RiServiceFill,
+	RiVideoFill,
 } from 'react-icons/ri';
 import { Fade } from 'react-awesome-reveal';
 import Link from 'next/link';
@@ -28,7 +28,7 @@ const Hero = () => {
 							damping={1e-1}
 							triggerOnce={true}>
 							<div className='text-sm uppercase font-semibold mb-4 text-primary tracking-[4px]'>
-								Photography
+								Model
 							</div>
 						</Fade>
 
@@ -48,9 +48,9 @@ const Hero = () => {
 							damping={1e-1}
 							triggerOnce={true}>
 							<p className='subtitle max-w-[590px] mt-4 mx-auto xl:mx-0'>
-								We are fine art, nature & portrait film photographers from San
-								Francisco, with a special love for natural light, medium format
-								film cameras & redheads with freckles.
+								I’m your favorite mature, busty film star with a wild side and a
+								love for adventure. Dive into my world of passion and
+								excitement, where every moment is unforgettable.
 							</p>
 						</Fade>
 
@@ -84,7 +84,7 @@ const Hero = () => {
 							damping={1e-1}
 							triggerOnce={true}>
 							<Socials
-								containerStyles='flex gap-x-6 mx-auto xl:mx-0'
+								containerStyles='flex justify-center gap-x-6 mx-auto md:justify-start xl:mx-0'
 								iconStyles='text-foreground text-[22px] hover:text-primary transition-all'
 							/>
 						</Fade>
@@ -98,8 +98,10 @@ const Hero = () => {
 						damping={1e-1}
 						triggerOnce={true}>
 						<div className='relative hidden xl:flex'>
+							{/* https://persiaspalace.com/images/slide1.jpg */}
+							{/* /profile.jpg */}
 							<HeroImg
-								imgSrc='/about/photography.svg'
+								imgSrc='https://persiaspalace.com/images/slide1.jpg'
 								containerStyles='w-[550px] h-[475px] bg-no-repeat relative bg-bottom'
 							/>
 						</div>
@@ -117,7 +119,7 @@ const Hero = () => {
 								damping={1e-1}
 								triggerOnce={true}>
 								{/* Badge 1 */}
-								<div className='flex flex-col max-w-xs mx-auto gap-y-4'>
+								<div className='flex flex-col items-center md:items-stretch max-w-xs mx-auto gap-y-4'>
 									<dt className='text-base leading-7 text-muted-foreground'>
 										Years of Experience
 									</dt>
@@ -131,7 +133,7 @@ const Hero = () => {
 								</div>
 
 								{/* Badge 2 */}
-								<div className='flex flex-col max-w-xs mx-auto gap-y-4'>
+								<div className='flex flex-col items-center md:items-stretch max-w-xs mx-auto gap-y-4'>
 									<dt className='text-base leading-7 text-muted-foreground'>
 										Followers
 									</dt>
@@ -145,13 +147,13 @@ const Hero = () => {
 								</div>
 
 								{/* Badge 3 */}
-								<div className='flex flex-col max-w-xs mx-auto gap-y-4'>
+								<div className='flex flex-col items-center md:items-stretch max-w-xs mx-auto gap-y-4'>
 									<dt className='text-base leading-7 text-muted-foreground'>
-										Projects
+										Videos
 									</dt>
 									<dd className='order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl'>
 										<Badge
-											icon={<RiServiceFill />}
+											icon={<RiVideoFill />}
 											endCountNum={79}
 											endCountText='+'
 										/>
