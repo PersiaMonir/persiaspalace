@@ -22,35 +22,35 @@ const reviewsData = [
 		name: 'Jennifer',
 		job: '2-Month Subscriber',
 		review:
-			'But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account.',
+			"Persia's content is always exciting and full of passion. Every video leaves me wanting more and keeps me on the edge. I can't get enough!",
 	},
 	{
 		avatar: '/reviews/avatar-2.png',
 		name: 'Lopez Chris',
 		job: '3-Month Subscriber',
 		review:
-			'You how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account, and expound',
+			'Every post from Persia is filled with energy and creativity. Three months in, and she knows exactly how to keep things spicy!',
 	},
 	{
 		avatar: '/reviews/avatar-3.png',
 		name: 'Hamilton',
 		job: '6-Month Subscriber',
 		review:
-			'But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account.',
+			'Long time subscriber here. Persia brings a unique and captivating energy to her content. Her videos are always a delightful and you really see her 😏',
 	},
 	{
 		avatar: '/reviews/avatar-4.png',
 		name: 'Lucifer',
 		job: '1-Month Subscriber',
 		review:
-			'You how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account, and expound',
+			"Just started following Persia, and I'm already hooked. She knows just how to tease and hasn't disappointed in the one month I've been here!",
 	},
 	{
 		avatar: '/reviews/avatar-6.png',
 		name: 'Stork Gem',
 		job: '4-Month Subscriber',
 		review:
-			'You how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account, and expound',
+			"Persia's creativity and enthusiasm shine through in every video. Her content is always fresh, exciting, and just the right amount of naughty. A true star!",
 	},
 ];
 

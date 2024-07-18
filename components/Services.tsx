@@ -1,6 +1,6 @@
 'use client';
 
-import { Smile, Scan, Bird } from 'lucide-react';
+import { BookCopy } from 'lucide-react';
 import {
 	Card,
 	CardContent,
@@ -9,22 +9,24 @@ import {
 	CardTitle,
 } from '@/components/ui/card';
 import { Fade } from 'react-awesome-reveal';
+import Link from 'next/link';
 
 const servicesData = [
 	{
-		icon: <Smile size={48} strokeWidth={1} />,
-		title: 'Book 1',
+		icon: <BookCopy size={48} strokeWidth={1} />,
+		title: 'The Book of Johns',
+		link: 'https://www.amazon.ca/Book-Johns-Persia-Monir/dp/0988629704',
 		description:
-			'But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system.',
+			'A dive into the scandalous world of Persia Monir, where each "John" she met as an exotic dancer reveals life lessons, romance, and unexpected twists.',
 	},
 	{
-		icon: <Scan size={48} strokeWidth={1} />,
+		icon: <BookCopy size={48} strokeWidth={1} />,
 		title: 'Book 2',
 		description:
 			'But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system.',
 	},
 	{
-		icon: <Bird size={48} strokeWidth={1} />,
+		icon: <BookCopy size={48} strokeWidth={1} />,
 		title: 'Book 3',
 		description:
 			'But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system.',
@@ -55,21 +57,21 @@ const Services = () => {
 						damping={1e-1}
 						triggerOnce={true}>
 						{servicesData.map((item, index) => (
-							<Card
-								key={index}
-								className='relative w-full max-w-[425px] h-[450px] flex flex-col pb-10 justify-center items-center cursor-pointer hover:bg-tertiary dark:hover:bg-white/10 transition-all duration-700'>
-								<CardHeader className='text-primary'>
-									<div className='w-[80px] h-[80px] bg-primary text-white rounded-full flex justify-center items-center absolute -bottom-6 right-6'>
-										{item.icon}
-									</div>
-								</CardHeader>
-								<CardContent className='text-center'>
-									<CardTitle className='mb-4'>{item.title}</CardTitle>
-									<CardDescription className='text-lg'>
-										{item.description}
-									</CardDescription>
-								</CardContent>
-							</Card>
+							<Link key={index} href={item.link ?? '/'} target='_blank'>
+								<Card className='relative w-full max-w-[425px] h-[450px] flex flex-col pb-10 justify-center items-center cursor-pointer hover:bg-tertiary dark:hover:bg-white/10 transition-all duration-700'>
+									<CardHeader className='text-primary'>
+										<div className='w-[80px] h-[80px] bg-primary text-white rounded-full flex justify-center items-center absolute -bottom-6 right-6'>
+											{item.icon}
+										</div>
+									</CardHeader>
+									<CardContent className='text-center'>
+										<CardTitle className='mb-4'>{item.title}</CardTitle>
+										<CardDescription className='text-lg'>
+											{item.description}
+										</CardDescription>
+									</CardContent>
+								</Card>
+							</Link>
 						))}
 					</Fade>
 				</div>

@@ -1,5 +1,6 @@
 import { Badge } from '@/components/ui/badge';
 import { Card, CardHeader } from '@/components/ui/card';
+import { cn } from '@/lib/utils';
 import { Group, Link2Icon } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -9,6 +10,7 @@ interface ProjectCardProps {
 		image: string;
 		category: string;
 		name: string;
+		position: string;
 		description: string;
 		link: string;
 		codepen: string;
@@ -27,7 +29,10 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
 						height={200}
 						alt=''
 						priority
-						className='absolute top-0 transition-all shadow-2xl hover:scale-110'
+						className={cn(
+							'absolute transition-all shadow-2xl hover:scale-110',
+							project.position
+						)}
 					/>
 
 					{/* Link Button */}

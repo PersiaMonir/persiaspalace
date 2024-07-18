@@ -119,7 +119,7 @@ const Hero = () => {
 								damping={1e-1}
 								triggerOnce={true}>
 								{/* Badge 1 */}
-								<div className='flex flex-col items-center md:items-stretch max-w-xs mx-auto gap-y-4'>
+								<div className='flex flex-col items-center max-w-xs mx-auto md:items-stretch gap-y-4'>
 									<dt className='text-base leading-7 text-muted-foreground'>
 										Years of Experience
 									</dt>
@@ -133,28 +133,28 @@ const Hero = () => {
 								</div>
 
 								{/* Badge 2 */}
-								<div className='flex flex-col items-center md:items-stretch max-w-xs mx-auto gap-y-4'>
+								<div className='flex flex-col items-center max-w-xs mx-auto md:items-stretch gap-y-4'>
 									<dt className='text-base leading-7 text-muted-foreground'>
 										Followers
 									</dt>
 									<dd className='order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl'>
 										<Badge
 											icon={<RiBodyScanFill />}
-											endCountNum={967}
+											endCountNum={154}
 											endCountText='k'
 										/>
 									</dd>
 								</div>
 
 								{/* Badge 3 */}
-								<div className='flex flex-col items-center md:items-stretch max-w-xs mx-auto gap-y-4'>
+								<div className='flex flex-col items-center max-w-xs mx-auto md:items-stretch gap-y-4'>
 									<dt className='text-base leading-7 text-muted-foreground'>
 										Videos
 									</dt>
 									<dd className='order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl'>
 										<Badge
 											icon={<RiVideoFill />}
-											endCountNum={79}
+											endCountNum={200}
 											endCountText='+'
 										/>
 									</dd>

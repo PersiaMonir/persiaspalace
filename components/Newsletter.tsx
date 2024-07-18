@@ -33,11 +33,11 @@ const Newsletter = () => {
 								damping={1e-1}
 								triggerOnce={true}>
 								<p className='mt-4 text-lg leading-8 subtitle'>
-									But I must explain to you how all this mistaken idea of
-									denouncing pleasure and praising pain was born and I will give
-									you a complete account of the system, and expound the actual
-									teachings of the great explorer of the truth, the
-									master-builder of human happiness.
+									Looking for a dynamic and experienced model to bring your
+									vision to life? Persia Monir is here to make every moment
+									unforgettable. Whether you need a model for photoshoots,
+									events, or personal projects, Persia&apos;s experience and
+									passion ensure a memorable experience.
 								</p>
 							</Fade>
 
@@ -81,8 +81,8 @@ const Newsletter = () => {
 										Weekly posts
 									</dt>
 									<dd className='mt-2 leading-7'>
-										Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-										Impedit distinctio incidunt, id officiis
+										Get weekly updates from Persia Monir with exclusive looks
+										and special content just for subscribers.
 									</dd>
 								</div>
 							</Fade>
@@ -102,8 +102,8 @@ const Newsletter = () => {
 										Full Privacy
 									</dt>
 									<dd className='mt-2 leading-7'>
-										Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-										Impedit distinctio incidunt, id officiis
+										We value and respect your privacy. Enjoy full
+										confidentiality with all interactions and content shared.
 									</dd>
 								</div>
 							</Fade>

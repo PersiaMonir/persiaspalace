@@ -5,54 +5,40 @@ import ProjectCard from '@/components/ProjectCard';
 
 const projectData = [
 	{
-		image: '/work/3.png',
+		image: '/work/angelica-raven.jpg',
 		category: 'Models',
 		name: 'Angelica Raven',
+		position: 'top-0',
 		description:
 			'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum, modi.',
 		link: '/',
 		codepen: '/',
 	},
 	{
-		image: '/work/5.png',
+		image: '/work/kimora-klein.jpg',
 		category: 'Models',
 		name: 'Kimora Klein',
+		position: 'top-0',
 		description:
 			'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum, modi.',
 		link: '/',
 		codepen: '/',
 	},
 	{
-		image: '/work/7.png',
+		image: '/work/jessie-palmer.jpg',
 		category: 'Models',
 		name: 'Jessie Palmer',
+		position: '-top-32',
 		description:
 			'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum, modi.',
 		link: '/',
 		codepen: '/',
 	},
 	{
-		image: '/work/8.png',
-		category: 'Models',
-		name: 'Kayla',
-		description:
-			'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum, modi.',
-		link: '/',
-		codepen: '/',
-	},
-	{
-		image: '/work/9.png',
+		image: '/work/rachel-steele.jpg',
 		category: 'Models',
 		name: 'Rachel Steele',
-		description:
-			'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum, modi.',
-		link: '/',
-		codepen: '/',
-	},
-	{
-		image: '/work/3.png',
-		category: 'Models',
-		name: 'Mary Johnson',
+		position: '-top-12',
 		description:
 			'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum, modi.',
 		link: '/',
