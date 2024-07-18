@@ -1,15 +1,5 @@
-'use client';
-
-import Image from 'next/image';
 import Link from 'next/link';
-import {
-	RiPaypalFill,
-	RiSnapchatFill,
-	RiSkypeFill,
-	RiFacebookFill,
-	RiInstagramFill,
-	RiTwitterFill,
-} from 'react-icons/ri';
+import { RiLinkedinFill, RiInstagramFill, RiTwitterFill } from 'react-icons/ri';
 
 interface SocialsProps {
 	containerStyles?: string;
@@ -21,6 +11,10 @@ const icons = [
 	{
 		path: 'https://www.instagram.com/persia_monir1/',
 		name: <RiInstagramFill />,
+	},
+	{
+		path: 'https://www.linkedin.com/in/persia-monir-b00711287',
+		name: <RiLinkedinFill />,
 	},
 ];
 
